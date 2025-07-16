@@ -109,5 +109,5 @@ We have successfully validated the framework with three increasingly complex mod
 
 ## 📄 License | 许可证
 
-This project is licensed under the [YOUR_CHOSEN_LICENSE]. See the `LICENSE` file for details.
-*本项目采用 [您选择的许可证] 授权。详情请见 `LICENSE` 文件。*
+This project is licensed under the [MIT]. See the `LICENSE` file for details.
+*本项目采用 [MIT] 授权。详情请见 `LICENSE` 文件。*
