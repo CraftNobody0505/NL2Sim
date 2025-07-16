@@ -55,7 +55,7 @@ The system employs a three-tier decoupled architecture:
 ### Prerequisites | 环境要求
 
 * Python 3.8+
-* MATLAB & Simulink (e.g., R2022b or newer)
+* MATLAB & Simulink (e.g., R2024b or newer)
 * MATLAB Engine API for Python
 * A Google AI API Key
 
