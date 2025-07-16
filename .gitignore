@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+pip-selfcheck.json
+
+# Logs
+logs/*.log
+
+# IDE / Editor specific
+.idea/
+.vscode/
+*.swp
+
+# Output (optional, if you save generated models locally)
+output/
+*.slx
+*.slxc
