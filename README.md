@@ -94,10 +94,16 @@ We have successfully validated the framework with three increasingly complex mod
 *我们已通过三个复杂度递增的模型成功验证了该框架：*
 
 1.  **PID Controller**: A standard linear control system.
-2.  **Thermostat**: A non-linear system with logic gates and feedback loops.
-3.  **Projectile Motion**: A dynamic system involving trigonometric functions and second-order integration.
+3.  **Thermostat**: A non-linear system with logic gates and feedback loops.
+4.  **Projectile Motion**: A dynamic system involving trigonometric functions and second-order integration.
 
-*(You can add screenshots or GIFs of the generated models here)*
+<img width="940" height="729" alt="inverted_pendulum_control" src="https://github.com/user-attachments/assets/2c728d8a-9216-4f46-a116-f9952ff4abc6" />
+<img width="565" height="511" alt="inverted_pendulum_control_Oscilloscope" src="https://github.com/user-attachments/assets/35b5ec2d-4f5f-42d2-89c2-41908c067bf6" />
+<img width="969" height="746" alt="Thermostat_Control_System" src="https://github.com/user-attachments/assets/4734f646-4764-47f4-973a-e0cd7492c255" />
+<img width="562" height="505" alt="Thermostat_Control_System_Oscilloscope" src="https://github.com/user-attachments/assets/c8c04a72-9f69-4d5b-9246-c83fafc293e9" />
+<img width="968" height="746" alt="projectile_motion_model" src="https://github.com/user-attachments/assets/06a45332-fe75-464e-9aa6-cc7df55a8d27" />
+<img width="560" height="507" alt="projectile_motion_model_Oscilloscope" src="https://github.com/user-attachments/assets/b18404fa-9316-4541-b95e-34bc1b3331d4" />
+
 
 ---
 
