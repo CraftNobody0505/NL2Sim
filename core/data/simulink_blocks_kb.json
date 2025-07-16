@@ -1,0 +1,182 @@
+{
+  "加法器": {
+    "block_type": "simulink/Math Operations/Sum",
+    "ports": { "in": [], "out": ["1"] },
+    "params": {
+      "输入符号": "Inputs",
+      "输入数量": "NumInputPorts"
+    },
+    "notes": "这是一个通用的加/减法器。使用'输入符号'参数设置运算(如'++'或'+-')，使用'输入数量'参数设置端口个数。"
+  },
+  "减法器": {
+    "block_type": "simulink/Math Operations/Subtract",
+    "ports": { "in": ["1", "2"], "out": ["1"] },
+    "params": {},
+    "notes": "这是一个双输入减法器，执行 u1 - u2。"
+  },
+  "增益": {
+    "block_type": "simulink/Math Operations/Gain",
+    "ports": { "in": ["1"], "out": ["1"] },
+    "params": {
+      "增益值": "Gain"
+    },
+    "notes": "将输入信号乘以一个常数。"
+  },
+  "乘法器": {
+    "block_type": "simulink/Math Operations/Product",
+    "ports": { "in": [], "out": ["1"] },
+    "params": {
+      "输入数量": "NumInputPorts"
+    },
+    "notes": "将多个输入信号逐元素相乘。使用'输入数量'参数设置端口个数。"
+  },
+  "除法器": {
+    "block_type": "simulink/Math Operations/Divide",
+    "ports": { "in": ["1", "2"], "out": ["1"] },
+    "params": {},
+    "notes": "将第一个输入除以第二个输入。"
+  },
+  "常数": {
+    "block_type": "simulink/Sources/Constant",
+    "ports": { "in": [], "out": ["1"] },
+    "params": {
+      "值": "Value"
+    },
+    "notes": "输出一个常量值。"
+  },
+  "阶跃信号": {
+    "block_type": "simulink/Sources/Step",
+    "ports": { "in": [], "out": ["1"] },
+    "params": {
+      "阶跃时间": "Time",
+      "初始值": "Before",
+      "最终值": "After"
+    },
+    "notes": "在指定时间从一个值跳变到另一个值。"
+  },
+  "正弦波": {
+    "block_type": "simulink/Sources/Sine Wave",
+    "ports": { "in": [], "out": ["1"] },
+    "params": {
+      "幅值": "Amplitude",
+      "偏置": "Bias",
+      "频率": "Frequency",
+      "相位": "Phase"
+    }
+  },
+  "积分器": {
+    "block_type": "simulink/Continuous/Integrator",
+    "ports": { "in": ["1"], "out": ["1"] },
+    "params": {
+      "初始条件": "InitialCondition"
+    }
+  },
+  "微分器": {
+    "block_type": "simulink/Continuous/Derivative",
+    "ports": { "in": ["1"], "out": ["1"] },
+    "params": {}
+  },
+  "传递函数": {
+    "block_type": "simulink/Continuous/Transfer Fcn",
+    "ports": { "in": ["1"], "out": ["1"] },
+    "params": {
+      "分子": "Numerator",
+      "分母": "Denominator"
+    },
+    "notes": "分子和分母的系数都需要用方括号括起来，例如 '[1]' 或 '[5 1]'"
+  },
+  "示波器": {
+    "block_type": "simulink/Sinks/Scope",
+    "ports": { "in": [], "out": [] },
+    "params": {
+      "输入端口数量": "NumInputPorts"
+    },
+    "notes": "使用'输入端口数量'参数来改变Scope可以接收的信号数量。"
+  },
+  "PID控制器": {
+    "block_type": "simulink/Continuous/PID Controller",
+    "ports": { "in": ["1"], "out": ["1"] },
+    "params": {
+      "比例(P)": "P",
+      "积分(I)": "I",
+      "微分(D)": "D",
+      "滤波系数(N)": "N"
+    },
+    "notes": "这是一个标准的PID控制器，可以直接设置P, I, D, N四个核心参数。"
+  },
+  "多路复用器": {
+    "block_type": "simulink/Signal Routing/Mux",
+    "ports": { "in": [], "out": ["1"] },
+    "params": {
+      "输入数量": "NumInputPorts"
+    },
+    "notes": "将多个信号合并成一个向量。使用'输入数量'设置端口个数。"
+  },
+  "解复用器": {
+    "block_type": "simulink/Signal Routing/Demux",
+    "ports": { "in": ["1"], "out": [] },
+    "params": {
+      "输出数量": "Outputs"
+    },
+    "notes": "将一个向量信号拆分成多个输出。使用'输出数量'参数设置端口个数。"
+  },
+  "关系运算符": {
+    "block_type": "simulink/Logic and Bit Operations/Relational Operator",
+    "ports": { "in": ["1", "2"], "out": ["1"] },
+    "params": {
+      "运算符": "Operator"
+    },
+    "notes": "比较两个输入。运算符可以是'==', '>', '<', '>=', '<='等。"
+  },
+  "开关": {
+    "block_type": "simulink/Signal Routing/Switch",
+    "ports": { "in": ["1", "2", "3"], "out": ["1"] },
+    "params": {
+      "阈值": "Threshold"
+    },
+    "notes": "当端口2的信号满足条件时，输出端口1的信号，否则输出端口3的信号。"
+  },
+  "饱和器": {
+    "block_type": "simulink/Discontinuities/Saturation",
+    "ports": { "in": ["1"], "out": ["1"] },
+    "params": {
+      "上限": "UpperLimit",
+      "下限": "LowerLimit"
+    }
+  },
+  "永磁同步电机": {
+    "block_type": "sps_lib/Electrical Machines/Permanent Magnet Synchronous Machine",
+    "ports": {
+      "in": ["abc/1", "Tm/2"],
+      "out": ["m/1"]
+    },
+    "params": {},
+    "notes": "输入端口1是三相电压(abc)，输入端口2是机械转矩(Tm)，输出端口m是包含转速、转子角度等信息的测量总线。"
+  },
+  "三相V-I测量": {
+    "block_type": "sps_lib/Sensors and Measurements/Three-Phase V-I Measurement",
+    "ports": {
+      "in": ["V/1", "I/2"],
+      "out": ["Vabc/1", "Iabc/2"]
+    },
+    "params": {},
+    "notes": "这是一个串联和并联混合的模块。输入V1/I2分别连接电压源和电流路径。输出Vabc和Iabc是测量信号。"
+  },
+  "abc to dq0变换": {
+    "block_type": "sps_lib/Control/abc to dq0",
+    "ports": {
+      "in": ["abc/1"],
+      "out": ["dq0/1"]
+    },
+    "params": {},
+    "notes": "这是一个总线信号，必须使用'解复用器'分离d和q信号。将解复用器的输出数量设置为'2'，端口1是d，端口2是q。"
+  },
+  "dq0 to abc变换": {
+    "block_type": "sps_lib/Control/dq0 to abc",
+    "ports": {
+      "in": ["d/1", "q/2"],
+      "out": ["abc/1"]
+    },
+    "params": {}
+  }
+}
