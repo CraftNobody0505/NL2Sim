@@ -1,0 +1,15 @@
+# Python-Bibliotheken, die für das NL2Sim-Projekt erforderlich sind
+# Haupt-Controller-Abhängigkeiten
+flask
+flask_apscheduler
+requests
+google-generativeai
+
+# Simulink Service-Abhängigkeiten
+# Die MATLAB Engine API wird normalerweise nicht über pip installiert.
+# Sie muss aus dem MATLAB-Installationsverzeichnis installiert werden.
+# Siehe MathWorks-Dokumentation für Anweisungen.
+# matlab
+
+# Diagramm-Generator-Abhängigkeiten (optional)
+graphviz
