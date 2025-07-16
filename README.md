@@ -3,9 +3,9 @@
 <br>
 ***一个用于从自然语言规格说明自动生成Simulink模型的框架。***
 
-![GitHub stars](https://img.shields.io/github/stars/YOUR_USERNAME/NL2Sim?style=social)
-![GitHub forks](https://img.shields.io/github/forks/YOUR_USERNAME/NL2Sim?style=social)
-![GitHub license](https://img.shields.io/github/license/YOUR_USERNAME/NL2Sim)
+![GitHub stars](https://img.shields.io/github/stars/CraftNobody0505/NL2Sim?style=social)
+![GitHub forks](https://img.shields.io/github/forks/CraftNobody0505/NL2Sim?style=social)
+![GitHub license](https://img.shields.io/github/license/CraftNobody0505/NL2Sim)
 
 ---
 
